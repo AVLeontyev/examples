@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SequentialMultiStageSystem", "SequentialMultiStageSystem\SequentialMultiStageSystem.csproj", "{235AEEB4-D70F-4AF4-8D46-8EB381A40B50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4AC982C1-1174-4D5C-BDE8-6A95D8068CA8}"
+	ProjectSection(SolutionItems) = preProject
+		SequentialMultiStageSystem\bin\Debug\Input.txt = SequentialMultiStageSystem\bin\Debug\Input.txt
+		SequentialMultiStageSystem\bin\Debug\Output.txt = SequentialMultiStageSystem\bin\Debug\Output.txt
+		SequentialMultiStageSystem\bin\Debug\OutputGant.txt = SequentialMultiStageSystem\bin\Debug\OutputGant.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{235AEEB4-D70F-4AF4-8D46-8EB381A40B50}.Debug|x86.ActiveCfg = Debug|x86
+		{235AEEB4-D70F-4AF4-8D46-8EB381A40B50}.Debug|x86.Build.0 = Debug|x86
+		{235AEEB4-D70F-4AF4-8D46-8EB381A40B50}.Release|x86.ActiveCfg = Release|x86
+		{235AEEB4-D70F-4AF4-8D46-8EB381A40B50}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
