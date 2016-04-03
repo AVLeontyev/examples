@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "О нас";
+}
+<b>
+
+    <h2>О нас</h2>
+<br><br>
+<ul>
+                    <li>@Html.ActionLink("Общая информация", "GeneralInformation", "Home")</li>
+                    <li>@Html.ActionLink("Коллектив", "Staff", "Home")</li>
+                    <li>@Html.ActionLink("Наши дети", "Index", "Children")</li>
+                    <li>@Html.ActionLink("Родителям", "ToParents", "Home")</li>
+                </ul>

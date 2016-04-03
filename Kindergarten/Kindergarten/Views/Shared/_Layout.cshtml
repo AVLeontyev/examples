@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+    <head> @*Задает импортирование CSS и скриптов*@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+    </head>
+    <body>
+        <header>
+        <div class="wr">
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title">@Html.ActionLink("ДОУ Детский сад", "Index", "News")</p> @*Устанавливает заголовок страницы*@
+                </div>
+                <div class="float-right">
+                    <section id="login">
+                        @Html.Partial("_LoginPartial") @*Выводит частичное представление*@
+                       @* Hello, <span class="username">@Html.Partial("_LogOnPartial")</span>!*@
+                    </section>
+                    
+                </div>
+
+            </div>
+            <nav>
+                        <ul id="menu">  @*Определяет пункты меню*@
+                            <li id="red">@Html.ActionLink("Главная", "Index", "News")</li>
+                           @* <li>@Html.ActionLink("О нас", "About", "Home")</li>*@
+                            <li class="orange">@Html.ActionLink("О нас", "About", "Home")</li>
+                            <li class="yellow">@Html.ActionLink("Документы", "Documents", "Home")</li>
+                         @*   <li>@Html.ActionLink("На заметку", "Index", "News")</li>*@
+                            <li class="green">@Html.ActionLink("Расписание", "Schedule", "Home")</li>
+                          @*  <li>@Html.ActionLink("Наше творчество", "Index", "News")</li>*@
+                            <li class="cyan">@Html.ActionLink("Фотогалерея", "Index", "PhotoGallery")</li>
+                            <li class="blue">@Html.ActionLink("Контакты", "Contact", "Home")</li>
+                            <li class="purple">@Html.ActionLink("Задать вопрос", "Index", "Guestbook")</li>
+                            
+                        </ul>
+                    </nav>
+                    </div>
+        </header>
+        <div id="body">
+            @RenderSection("featured", required: false) @*Выводит содержимое страницы*@
+
+<section class="content-wrapper main-content clear-fix">
+<aside>
+    <div id="menu2">
+    <ul>
+        <li class="l1">@Html.ActionLink("Главная", "Index", "News")</li>
+        <li class="l1">@Html.ActionLink("О нас", "About", "Home")</li>
+                <ul>
+                    <li class="l2">@Html.ActionLink("Общая информация", "GeneralInformation", "Home")</li>
+                    <li class="l2">@Html.ActionLink("Коллектив", "Staff", "Home")</li>
+                    <li class="l2">@Html.ActionLink("Наши дети", "Index", "Children")</li>
+                        <ul>
+                           @* <li class="l3">@Html.ActionLink("Гномики", "Gnomiki", "Children")</li>
+                            <li class="l3">@Html.ActionLink("Землянички", "Zemlyanichki", "Children")</li>
+                            <li class="l3">@Html.ActionLink("Кораблики", "Korabliki", "Children")</li>
+                            <li class="l3">@Html.ActionLink("Дружная семейка", "Semeyka", "Children")</li>
+                            <li class="l3">@Html.ActionLink("Теремок", "Teremok", "Children")</li>
+                            <li class="l3">@Html.ActionLink("Родничок", "Rodnichok", "Children")</li>
+                            <li class="l3">@Html.ActionLink("Солнышко", "Solnyshko", "Children")</li>*@
+                            <li class="l3">@Html.ActionLink("Гномики", "Group", "Children", new { access = 1 }, null)</li>
+                            <li class="l3">@Html.ActionLink("Землянички", "Group", "Children", new { access = 7 }, null)</li>
+                            <li class="l3">@Html.ActionLink("Кораблики", "Group", "Children", new { access = 2 }, null)</li>
+                            <li class="l3">@Html.ActionLink("Дружная семейка", "Group", "Children", new { access = 4 }, null)</li>
+                            <li class="l3">@Html.ActionLink("Теремок", "Group", "Children", new { access = 6 }, null)</li>
+                            <li class="l3">@Html.ActionLink("Родничок", "Group", "Children", new { access = 3 }, null)</li>
+                            <li class="l3">@Html.ActionLink("Солнышко", "Group", "Children", new { access = 5 }, null)</li>
+                            @*<li class="l3">@Html.ActionLink("Группа", "Group", "Children", new { access = 1 }, null )</li>*@
+                        </ul>
+                     <li class="l2">@Html.ActionLink("Родителям", "ToParents", "Home")</li>
+                </ul>
+        <li class="l1">@Html.ActionLink("Новости", "Index", "News")</li>
+        <li class="l1">@Html.ActionLink("Документы", "Documents", "Home")</li>
+        <li class="l1">@Html.ActionLink("На заметку", "Interesting", "Home")</li>
+            <ul>
+                <li class="l2">@Html.ActionLink("МЧС", "MES", "Home")</li>
+                <li class="l2">@Html.ActionLink("Медицинский блок", "Medicine", "Home")</li>
+                <li class="l2">@Html.ActionLink("Здоровое питание", "Food", "Home")</li>
+                <li class="l2">@Html.ActionLink("Страничка логопеда", "Logoped", "Home")</li>
+            </ul>
+        <li class="l1">@Html.ActionLink("Расписание", "Schedule", "Home")</li>
+        <li class="l1">@Html.ActionLink("Наше творчество", "Index", "Creativity")</li>
+        <li class="l1">@Html.ActionLink("Фотогалерея", "Index", "PhotoGallery")</li>
+        <li class="l1">@Html.ActionLink("Контакты", "Contact", "Home")</li>
+       @* <li class="l1">@Html.ActionLink("Как с нами связаться", "Contact", "Home")</li>*@
+        <li class="l1">@Html.ActionLink("Задать вопрос", "Index", "Guestbook")</li>
+            
+    </ul>
+    </div>
+</aside>
+                @RenderBody()
+</section>
+
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div @*class="float-left"*@>
+                    <p>Copyright &copy; 2014-@DateTime.Now.Year "</p>
+                </div>
+            </div>
+        </footer>
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

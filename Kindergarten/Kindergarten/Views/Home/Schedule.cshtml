@@ -1,0 +1,34 @@
+﻿@model Kindergarten.Models.NewsListViewModel
+
+@{
+    ViewBag.Title = "Расписание";
+}
+
+<h2>Расписание образовательной деятельности в д/с на 2014-2015 уч. год</h2>
+
+@*<iframe src="../Content/Расписание.docx">*@
+<ul>
+</ul>
+<br><br><br>
+
+@foreach (var image in Model.Images)
+{    
+    <li type="circle"><a href="../@image.Image">@image.Text</a></li>   
+    if (User.Identity.Name == "Administrator")
+    {  
+         @Html.ActionLink("Удалить", "Delete", new { id = image.Id })
+    }
+}
+
+@if (User.Identity.Name == "Administrator")
+{
+    {
+        ViewBag.Title = "Upload";
+    }
+<h3>Выберите файл для загрузки</h3>
+    using (Html.BeginForm("UploadSchedule", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+    <input type="file" name="upload" /><br>
+    <input type="submit" value="Загрузить" />
+}
+}

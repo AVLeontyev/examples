@@ -1,0 +1,25 @@
+﻿@model Kindergarten.Models.NewsEntry
+
+@{
+    ViewBag.Title = "Добавление фотографий";
+}
+
+<h2>Новые фото:</h2>
+
+@if (User.Identity.Name == "Administrator")
+{   
+<form method="post" action="" enctype="multipart/form-data" FormMethod.Post>
+        <input type="file" name="upload1" /><br><br>
+             <input type="file" name="upload2" /><br><br>
+             <input type="file" name="upload3" /><br><br>
+             <input type="file" name="upload4" /><br><br>
+             <input type="file" name="upload5" /><br><br>
+             <input type="file" name="upload6" /><br><br>
+             <input type="file" name="upload7" /><br><br>
+             <input type="file" name="upload8" /><br><br>
+             <input type="file" name="upload9" /><br><br>
+             <input type="file" name="upload10" /><br><br>          
+        <input type="submit" value="Отправить фотографии" />
+
+</form>
+}

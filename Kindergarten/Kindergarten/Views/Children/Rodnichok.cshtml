@@ -1,0 +1,65 @@
+﻿@model Kindergarten.Models.GuestbookListViewModel
+
+@{
+    ViewBag.Title = "Родничок";
+}
+
+<h2>Родничок</h2>
+
+@if (User.Identity.Name == "Rodnichok" || User.Identity.Name == "Administrator")
+{
+
+<p>
+  @*<a href="/Guestbook/Create">Задать вопрос</a>*@
+  @Html.ActionLink("Задать вопрос", "Create", new { Access = 3 })
+</p>
+<br>
+<hr></hr>
+
+    foreach (var entry in Model.Entries)
+    {
+  <section class="contact">     
+      <p align="right">@entry.DateAdded.ToLongDateString() @entry.DateAdded.ToString("hh:mm")</p>
+      <h3>&nbsp; &nbsp; &nbsp;@entry.Name</h3>
+      <i>Вопрос:</i>
+      <p>@entry.Message</p>
+      <br>
+      @if (User.Identity.Name == "Administrator")
+      {
+           @Html.ActionLink("Редактировать вопрос", "ChangeQuestion", new { id = entry.Id })
+           @Html.ActionLink("Удалить вопрос", "Delete", new { id = entry.Id })
+      }
+        <br>
+        <br>
+      @if (entry.Reply != null)
+      { 
+      <i>Ответ:</i>
+      <p>@entry.Reply</p>
+      <br>
+      }
+      @if (User.Identity.Name == "Administrator")
+      {
+          if (entry.Reply == null)
+          { 
+            @Html.ActionLink("Ответить", "Reply", new { id = entry.Id, i = entry.Id })
+          }
+
+          if (entry.Reply != null)
+          { 
+            @Html.ActionLink("Изменить ответ", "ChangeAnswer", new { id = entry.Id, i = entry.Id })
+            @Html.ActionLink("Удалить ответ", "DeleteAnswer", new { id = entry.Id, i = entry.Id })
+          }
+      }
+      <hr></hr>
+  </section>
+    }
+<div class="pager">
+  @Html.PageLinks(Model.PagingInfo, x => Url.Action("Rodnichok", new { page = x }))
+</div>
+    
+}
+
+@if (User.Identity.Name != "Rodnichok" && User.Identity.Name != "Administrator")
+{
+    <h3>Данный раздел разрешен для просмотра только пользователям с наличием соответствующего уровня доступа.</h3>
+}

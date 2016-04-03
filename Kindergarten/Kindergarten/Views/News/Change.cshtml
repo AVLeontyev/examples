@@ -1,0 +1,61 @@
+﻿@model Kindergarten.Models.NewsListViewModel
+
+@{
+    ViewBag.Title = "Change";
+}
+
+<h2>Редактирование новости</h2>
+
+@foreach (var entry in Model.Entries)
+{
+<form method="post" action="" enctype="multipart/form-data" FormMethod.Post>
+  <fieldset>
+    <br />
+    Заголовок новости:
+    <br />
+    <input type="text" name="Title" maxlength="200" value = @entry.Title/>
+    <br />
+    <br />
+    
+    Введите, пожалуйста, текст новости:
+    <br />
+    <textarea name="Text" rows="10" cols="40">@entry.Text
+    </textarea>
+    <br />
+    <br />
+
+    Прикрепите фото/видео <br><br>
+
+   @* @Html.TextBox("UploadedFile", Model.ImageData, new { type = "file", @class = "input-xlarge" })
+                @Html.ValidationMessage("UploadedFile")*@
+
+    @*    <form enctype="multipart/form-data" method=post>*@
+       @* <input type="hidden" name="max_file_size" value="1000000"><!-- макс. размер -->*@
+        Введите ссылки на фотографии: <br><br>
+       
+      @*  </form>*@
+@*        @using (Html.BeginForm("Create", "News", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {*@
+     @*<form enctype="multipart/form-data" method=post>*@
+        <input type="file" name="upload1" /><br><br>
+             <input type="file" name="upload2" /><br><br>
+             <input type="file" name="upload3" /><br><br>
+             <input type="file" name="upload4" /><br><br>
+             <input type="file" name="upload5" /><br><br>
+             <input type="file" name="upload6" /><br><br>
+             <input type="file" name="upload7" /><br><br>
+             <input type="file" name="upload8" /><br><br>
+             <input type="file" name="upload9" /><br><br>
+             <input type="file" name="upload10" /><br><br>
+            @*  </form>*@
+           
+        <input type="submit" value="Отправить новость" />
+  @*      }*@
+
+    <br />
+
+
+    
+  </fieldset>
+</form>
+}

@@ -1,0 +1,68 @@
+﻿@model Kindergarten.Models.NewsListViewModel
+
+@{
+    ViewBag.Title = "Документы";
+}
+<br>
+<h2>Список документов, доступных для ознакомления</h2>
+<br><br>
+<li type="circle"><a href="../Content/Documents/Documents/Лицензия.pdf">Лицензия</a></li>
+    <li type="circle"><a href="../Content/Documents/Documents/Приказ - Об утверждении федерального государственного образовательного стандарта дошкольного образования.rtf">Приказ об утверждении федерального государственного образовательного стандарта дошкольного образования.rtf</a></li>
+    <li type="circle"><a href="../Content/Documents/Documents/Годовая комплексно-тематическая модель воспитательно-образовательной деятельности детского сада № 315 на 2014-2015гг.docx">Годовая комплексно-тематическая модель воспитательно-образовательной деятельности детского сада № 315 на 2014-2015гг</a></li>
+<br><br>
+<hr></hr>
+    <li type="circle"><a href="../Content/Documents/ToParents/Советы родителям.docx">Советы родителям</a></li>
+    <li type="circle"><a href="../Content/Documents/ToParents/Конвенция о правах ребенка.docx">Конвенция о правах ребенка</a></li>
+    <li type="circle"><a href="../Content/Documents/ToParents/Правила катания на самокате и велосипеде.docx">Правила катания на самокате и велосипеде</a></li>
+    <li type="circle"><a href="../Content/Documents/ToParents/Зачем ребенку кукольный театр.docx">Зачем ребенку кукольный театр?</a></li>
+
+<br><br>
+
+    <li type="circle"><a href="../Content/Documents/MES/Типовые действия персонала при возникновении пожара.docx">Типовые действия персонала при возникновении пожара</a></li>
+    <li type="circle"><a href="../Content/Documents/MES/О пожарной безопасности.docx">О пожарной безопасности</a></li>
+
+<br><br>
+
+    <li type="circle"><a href="../Content/Documents/Schedule/Расписание.docx">Расписание образовательной деятельности</a></li>
+
+<br><br>
+
+    <li type="circle"><a href="../Content/Documents/Medicine/Отказ от профилактических прививок.docx">Отказ от профилактических прививок</a></li>
+    <li type="circle"><a href="../Content/Documents/Medicine/Добровольное информированное согласие.doc">Добровольное информированное согласие на проведение профилактических прививок детям или отказ от них</a></li>
+    <li type="circle"><a href="../Content/Documents/Medicine/План профилактических оздоровительных работ.docx">План профилактических оздоровительных работ</a></li>
+    <li type="circle"><a href="../Content/Documents/Medicine/Календарь профилактических прививок.docx">Календарь профилактических прививок</a></li>
+    <li type="circle"><a href="../Content/Documents/Medicine/Заболевания.docx">Заболевания</a></li>
+
+<br><br>
+
+<li type="circle"><a href="../Content/Documents/Logoped/Развитие речи. Звукопроизношение.docx">Развитие речи. Звукопроизношение</a></li>
+
+<br><br>
+
+<li type="circle"><a href="../Content/Documents/Food/О правильном питании.docx">О правильном питании</a></li>
+<li type="circle"><a href="../Content/Documents/Food/Объем порций.docx">Объем порций</a></li>
+<li type="circle"><a href="../Content/Documents/Food/График получения пищи.docx">График получения пищи</a></li>
+
+<br><br>
+
+@foreach (var image in Model.Images)
+{
+    <li type="circle"><a href="../@image.Image">@image.Text</a></li> 
+    if (User.Identity.Name == "Administrator")
+    {  
+         @Html.ActionLink("Удалить", "Delete", new { id = image.Id })
+    }
+}
+
+@if (User.Identity.Name == "Administrator")
+{
+    {
+        ViewBag.Title = "Upload";
+    }
+<h3>Выберите файл для загрузки</h3>
+    using (Html.BeginForm("Upload", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+    <input type="file" name="upload" /><br>
+    <input type="submit" value="Загрузить" />
+}
+}

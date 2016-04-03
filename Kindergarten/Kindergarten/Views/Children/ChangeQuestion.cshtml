@@ -1,0 +1,32 @@
+﻿@model Kindergarten.Models.GuestbookEntry
+
+@{
+    ViewBag.Title = "ChangeQuestion";
+}
+
+<h2>Редактирование вопроса</h2>
+
+<form method="post">
+  <fieldset>
+    <br />
+    Имя спрашивающего:
+    <br />
+    <input type="text" name="Name" maxlength="200" value = @Model.Name />
+    <br />
+    <br />
+    Текст вопроса:
+    <br />
+    <textarea name="Message" rows="10" cols="40" @*placeholder =*@  />@Model.Message
+    </textarea>
+    @*<input type="text" name="Message" maxlength="400" @*value="model.Message"/>*@
+@*    <br />
+    <br />
+    Текст ответа:
+    <br />
+    <textarea name="Reply" rows="10" cols="40">
+    </textarea>*@
+    <br />
+    <br />
+    <input type="submit" value="Сохранить" />
+  </fieldset>
+</form>

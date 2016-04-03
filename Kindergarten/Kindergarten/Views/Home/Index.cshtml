@@ -1,0 +1,87 @@
+﻿@{
+    ViewBag.Title = "Главная страница";
+}
+
+<h2 align="center">Последние новости</h2>
+
+     <hr></hr>
+
+ @*<section class="contact">*@
+
+@* <aside>
+    <div id="menu">
+    <ul>
+        <li>@Html.ActionLink("Главная", "Index", "Home")</li>
+        <li>@Html.ActionLink("О нас", "About", "Home")</li>
+                <ul>
+                    <li>@Html.ActionLink("Общая информация", "", "")</li>
+                    <li>@Html.ActionLink("Коллектив", "", "")</li>
+                    <li>@Html.ActionLink("Наши дети", "", "")</li>
+                        <ul>
+                            <li>@Html.ActionLink("Гномики", "", "")</li>
+                            <li>@Html.ActionLink("Землянички", "", "")</li>
+                            <li>@Html.ActionLink("Кораблики", "", "")</li>
+                            <li>@Html.ActionLink("Дружная семейка", "", "")</li>
+                            <li>@Html.ActionLink("Теремок", "", "")</li>
+                            <li>@Html.ActionLink("Родничок", "", "")</li>
+                            <li>@Html.ActionLink("Солнышко", "", "")</li>
+                        </ul>
+                     <li>@Html.ActionLink("Родителям", "", "")</li>
+                </ul>
+        <li>@Html.ActionLink("Новости", "", "")</li>
+        <li>@Html.ActionLink("Документы", "", "")</li>
+        <li>@Html.ActionLink("На заметку", "Interesting", "Home")</li>
+            <ul>
+                <li>@Html.ActionLink("МЧС", "MES", "Home")</li>
+                <li>@Html.ActionLink("Медицинский блок", "Medicine", "Home")</li>
+                <li>@Html.ActionLink("Здоровое питание", "Food", "Home")</li>
+                <li>@Html.ActionLink("Страничка логопеда", "Logoped", "Home")</li>
+            </ul>
+        <li>@Html.ActionLink("Расписание", "", "")</li>
+        <li>@Html.ActionLink("Наше творчество", "", "")</li>
+        <li>@Html.ActionLink("Фотогалерея", "", "")</li>
+        <li>@Html.ActionLink("Контакты", "", "")</li>
+            <ul>
+                <li>@Html.ActionLink("Как с нами связаться", "", "")</li>
+                <li>@Html.ActionLink("Задать вопрос", "", "")</li>
+            </ul>
+    </ul>
+    <div>
+</aside>*@
+@*</section>*@
+
+@*<aside>
+<div id="menu">
+    <ul>
+        <li><a href="">Главная</a></li>
+        <li><a href="">О компании</a>
+            <ul>
+                <li><a href="">Производство</a></li>
+                <li><a href="">Клиенты</a></li>
+                <li><a href="">Для партнеров</a></li>
+                <li><a href="">Для клиентов</a></li>
+                <li><a href="">Реклама</a></li>
+            </ul>
+        </li>
+        <li><a href="">Услуги</a></li>
+    </ul>
+    <div style="clear: both;"></div>
+</div>
+</aside>*@
+
+
+@foreach (var entry in ViewBag.Entries) 
+{
+    
+<section class="contact">
+      
+      <p align="right">@entry.DateAdded.ToLongDateString() @entry.DateAdded.ToString("hh:mm")</p>
+      <h3>&nbsp; &nbsp; &nbsp;@entry.Title</h3>
+      <p>@entry.Text</p>
+      <hr></hr>
+  </section>
+
+}
+
+
+

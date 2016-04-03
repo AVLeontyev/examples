@@ -1,0 +1,32 @@
+﻿@model Kindergarten.Models.GuestbookEntry
+
+@{
+    ViewBag.Title = "Reply";
+}
+
+<h2>Режим ответа на вопрос</h2>
+
+<form method="post">
+  <fieldset>
+    @*<br />
+    Имя спрашивающего:
+    <br />
+    <input type="text" name="Name" maxlength="200" @*value="model.Name" />*@
+    @*<br />
+    <br />
+    Текст вопроса:
+    <br />*@
+   @* <textarea name="Message" rows="10" cols="40" placeholder="model.Message">
+    </textarea>*@
+    @*<input type="text" name="Message" maxlength="400" @*value="model.Message"/>*@
+    <br />
+    <br />
+    Текст ответа:
+    <br />
+    <textarea name="Reply" rows="10" cols="40">
+    </textarea>
+    <br />
+    <br />
+    <input type="submit" value="Ответить" />
+  </fieldset>
+</form>

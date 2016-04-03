@@ -1,0 +1,80 @@
+﻿@model Kindergarten.Models.NewsListViewModel
+
+<style type="text/css">
+img.expando{ border: none; vertical-align: top; }
+</style>
+
+<script type="text/javascript" src="../Content/expando.js">
+</script>
+
+@{
+    ViewBag.Title = "Последние новости";
+}
+
+<h2 align="center">Последние новости</h2>
+
+@if (User.Identity.Name == "Administrator")
+    {
+    @Html.ActionLink("Добавить новость", "Create", "News")
+    }
+     <hr></hr>
+
+@foreach (var entry in Model.Entries) 
+{
+    
+         <section class="contact">
+
+       @if (User.Identity.Name == "Administrator")
+        {
+        
+      <div align="right">
+            @* @Html.ActionLink("Редактировать", "Edit", new { id = entry.Id }) *@
+                @Html.ActionLink("Редактировать", "Change", new { id = entry.Id })
+                <i>|</i>
+                 @Html.ActionLink("Удалить", "Delete", new { id = entry.Id })
+               @* <a href="../News/Delete" onclick="return(confirm('Вы уверены, что хотите удалить новость?'));">Удалить</a>*@
+                </div>
+            }
+        
+   <div class="item">
+
+     <b><p align="right">@entry.DateAdded.ToLongDateString() @entry.DateAdded.ToString("hh:mm")</p></b>
+     <h3>&nbsp; &nbsp; &nbsp;@entry.Title</h3>
+     <p>@entry.Text</p>
+
+   @foreach (var image in Model.Images)
+   {
+
+       if (image.Feedback == entry.Id)
+   {
+   <td>
+        <img class="expando" border="0" src="@image.Image" width="100"> 
+           @* <img src="@image.Image" width="50" >*@@*height="(image.Image.height())/5"*@
+          @*  @Html.Raw("<img style='width:80px; height:60px;' src=\"data:image/jpeg;base64,"
+                                + Convert.ToBase64String(entry.ImageData) + "\" />")*@
+   </td>
+   }
+    
+   }
+    
+      <hr></hr>
+  </section>
+}
+
+
+
+<div class="pager">
+  @Html.PageLinks(Model.PagingInfo, x => Url.Action("Index", new { page = x }))
+</div>
+
+
+
+
+@*<dl>
+  <dt>Заголовок:</dt>
+  <dd>@Model.Title</dd>
+  <dt>Дата добавления:</dt>
+  <dd>@Model.DateAdded</dd>
+  <dt>Текст новости:</dt>
+  <dd>@Model.News</dd>
+</dl>*@
