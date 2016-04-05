@@ -1,0 +1,29 @@
+C:\Users\Omon RA\Desktop\WindowsForms\WindowsForms\bin\Debug\WindowsForms.exe
+C:\Users\Omon RA\Desktop\WindowsForms\WindowsForms\bin\Debug\WindowsForms.pdb
+C:\Users\Omon RA\Desktop\WindowsForms\WindowsForms\obj\x86\Debug\WindowsForms.Form1.resources
+C:\Users\Omon RA\Desktop\WindowsForms\WindowsForms\obj\x86\Debug\WindowsForms.Properties.Resources.resources
+C:\Users\Omon RA\Desktop\WindowsForms\WindowsForms\obj\x86\Debug\WindowsForms.csproj.GenerateResource.Cache
+C:\Users\Omon RA\Desktop\WindowsForms\WindowsForms\obj\x86\Debug\WindowsForms.exe
+C:\Users\Omon RA\Desktop\WindowsForms\WindowsForms\obj\x86\Debug\WindowsForms.pdb
+D:\Мои документы\Учёба\ФПМИ\Магистратура\I семестр\ПпWГИ (Программирование под Windows Графических Интерфейсов)\ПпWГИП\WindowsForms\WindowsForms\obj\x86\Debug\WindowsForms.pdb
+D:\Мои документы\Учёба\ФПМИ\Магистратура\I семестр\ПпWГИ (Программирование под Windows Графических Интерфейсов)\ПпWГИП\WindowsForms\WindowsForms\bin\Debug\WindowsForms.exe
+D:\Мои документы\Учёба\ФПМИ\Магистратура\I семестр\ПпWГИ (Программирование под Windows Графических Интерфейсов)\ПпWГИП\WindowsForms\WindowsForms\bin\Debug\WindowsForms.pdb
+D:\Мои документы\Учёба\ФПМИ\Магистратура\I семестр\ПпWГИ (Программирование под Windows Графических Интерфейсов)\ПпWГИП\WindowsForms\WindowsForms\obj\x86\Debug\WindowsForms.Form1.resources
+D:\Мои документы\Учёба\ФПМИ\Магистратура\I семестр\ПпWГИ (Программирование под Windows Графических Интерфейсов)\ПпWГИП\WindowsForms\WindowsForms\obj\x86\Debug\WindowsForms.Properties.Resources.resources
+D:\Мои документы\Учёба\ФПМИ\Магистратура\I семестр\ПпWГИ (Программирование под Windows Графических Интерфейсов)\ПпWГИП\WindowsForms\WindowsForms\obj\x86\Debug\WindowsForms.csproj.GenerateResource.Cache
+D:\Мои документы\Учёба\ФПМИ\Магистратура\I семестр\ПпWГИ (Программирование под Windows Графических Интерфейсов)\ПпWГИП\WindowsForms\WindowsForms\obj\x86\Debug\WindowsForms.exe
+D:\Мои документы\Учёба\ФПМИ\Магистратура\I семестр\ПпWГИ (Программирование под Windows Графических Интерфейсов)\ПпWГИП\WindowsForms\WindowsForms\obj\x86\Debug\WindowsForms.csprojResolveAssemblyReference.cache
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\ParallelSingleStageSystem\WindowsForms\WindowsForms\obj\x86\Debug\WindowsForms.exe
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\ParallelSingleStageSystem\WindowsForms\WindowsForms\obj\x86\Debug\WindowsForms.pdb
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\ParallelSingleStageSystem\WindowsForms\WindowsForms\obj\x86\Debug\WindowsForms.Form1.resources
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\ParallelSingleStageSystem\WindowsForms\WindowsForms\obj\x86\Debug\WindowsForms.Properties.Resources.resources
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\ParallelSingleStageSystem\WindowsForms\WindowsForms\obj\x86\Debug\WindowsForms.csproj.GenerateResource.Cache
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\ParallelSingleStageSystem\WindowsForms\WindowsForms\bin\Debug\WindowsForms.exe
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\ParallelSingleStageSystem\WindowsForms\WindowsForms\bin\Debug\WindowsForms.pdb
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GanttChart\WindowsForms\obj\x86\Debug\WindowsForms.exe
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GanttChart\WindowsForms\obj\x86\Debug\WindowsForms.pdb
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GanttChart\WindowsForms\bin\Debug\WindowsForms.exe
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GanttChart\WindowsForms\bin\Debug\WindowsForms.pdb
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GanttChart\WindowsForms\obj\x86\Debug\WindowsForms.Form1.resources
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GanttChart\WindowsForms\obj\x86\Debug\WindowsForms.Properties.Resources.resources
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GanttChart\WindowsForms\obj\x86\Debug\WindowsForms.csproj.GenerateResource.Cache

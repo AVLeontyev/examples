@@ -1,0 +1,32 @@
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\!\WindowsForms\bin\Debug\WindowsForms.exe
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\!\WindowsForms\bin\Debug\WindowsForms.pdb
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\!\WindowsForms\bin\Debug\ILOG.Concert.dll
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\!\WindowsForms\bin\Debug\ILOG.CPLEX.dll
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\!\WindowsForms\obj\x86\Debug\GeneralizedJobShopProblemSolver.Form1.resources
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\!\WindowsForms\obj\x86\Debug\GeneralizedJobShopProblemSolver.Form4.resources
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\!\WindowsForms\obj\x86\Debug\WindowsForms.Properties.Resources.resources
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\!\WindowsForms\obj\x86\Debug\GeneralizedJobShopProblemSolver.csproj.GenerateResource.Cache
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\!\WindowsForms\obj\x86\Debug\WindowsForms.exe
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\!\WindowsForms\obj\x86\Debug\WindowsForms.pdb
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GeneralizedJobShopProblemSolver\WindowsForms\obj\x86\Debug\WindowsForms.exe
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GeneralizedJobShopProblemSolver\WindowsForms\obj\x86\Debug\WindowsForms.pdb
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GeneralizedJobShopProblemSolver\WindowsForms\bin\Debug\WindowsForms.exe
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GeneralizedJobShopProblemSolver\WindowsForms\bin\Debug\WindowsForms.pdb
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GeneralizedJobShopProblemSolver\WindowsForms\bin\Debug\ILOG.Concert.dll
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GeneralizedJobShopProblemSolver\WindowsForms\bin\Debug\ILOG.CPLEX.dll
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GeneralizedJobShopProblemSolver\WindowsForms\obj\x86\Debug\GeneralizedJobShopProblemSolver.Form1.resources
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GeneralizedJobShopProblemSolver\WindowsForms\obj\x86\Debug\GeneralizedJobShopProblemSolver.Form4.resources
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GeneralizedJobShopProblemSolver\WindowsForms\obj\x86\Debug\WindowsForms.Properties.Resources.resources
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GeneralizedJobShopProblemSolver\WindowsForms\obj\x86\Debug\GeneralizedJobShopProblemSolver.csproj.GenerateResource.Cache
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GeneralizedJobShopProblemSolver\WindowsForms\obj\x86\Debug\GeneralizedJobShopProblemSolver.csprojResolveAssemblyReference.cache
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GeneralizedJobShopProblemSolver v2.0\WindowsForms\obj\x86\Debug\WindowsForms.exe
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GeneralizedJobShopProblemSolver v2.0\WindowsForms\obj\x86\Debug\WindowsForms.pdb
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GeneralizedJobShopProblemSolver v2.0\WindowsForms\bin\Debug\WindowsForms.exe
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GeneralizedJobShopProblemSolver v2.0\WindowsForms\bin\Debug\WindowsForms.pdb
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GeneralizedJobShopProblemSolver v2.0\WindowsForms\bin\Debug\ILOG.Concert.dll
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GeneralizedJobShopProblemSolver v2.0\WindowsForms\bin\Debug\ILOG.CPLEX.dll
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GeneralizedJobShopProblemSolver v2.0\WindowsForms\obj\x86\Debug\GeneralizedJobShopProblemSolver.Form1.resources
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GeneralizedJobShopProblemSolver v2.0\WindowsForms\obj\x86\Debug\GeneralizedJobShopProblemSolver.Form4.resources
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GeneralizedJobShopProblemSolver v2.0\WindowsForms\obj\x86\Debug\WindowsForms.Properties.Resources.resources
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GeneralizedJobShopProblemSolver v2.0\WindowsForms\obj\x86\Debug\GeneralizedJobShopProblemSolver.csproj.GenerateResource.Cache
+D:\Мои документы\Учёба\ФБ\Магистерская диссертация\IV семестр\GeneralizedJobShopProblemSolver v2.0\WindowsForms\obj\x86\Debug\GeneralizedJobShopProblemSolver.csprojResolveAssemblyReference.cache
